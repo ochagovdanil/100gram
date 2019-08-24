@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegisterActivity">
+    <include
+        layout="@layout/partial_progress_bar"
+        android:visibility="gone" />
+    <ScrollView
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/partial_logo" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_register_activity_email"
+                style="@style/TextInputLayout">
+                <EditText
+                    android:id="@+id/et_register_activity_email"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/et_hint_register_activity_email"
+                    style="@style/EditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_register_activity_password"
+                style="@style/TextInputLayout">
+                <EditText
+                    android:id="@+id/et_register_activity_password"
+                    android:inputType="textPassword"
+                    android:hint="@string/et_hint_register_activity_password"
+                    style="@style/EditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_register_activity_password_repeat"
+                style="@style/TextInputLayout">
+                <EditText
+                    android:id="@+id/et_register_activity_password_repeat"
+                    android:inputType="textPassword"
+                    android:hint="@string/et_hint_register_activity_password_repeat"
+                    style="@style/EditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/tv_register_activity_have_account"
+                android:text="@string/tv_register_activity_have_account"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_register_activity_submit"
+                android:text="@string/btn_register_activity_submit"
+                style="@style/ButtonForm" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

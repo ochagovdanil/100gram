@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Common Strings -->
+    <string name="app_name">100gram</string>
+    <string name="tv_logo_title">Join the community</string>
+
+    <!-- Register Activity -->
+    <string name="et_hint_register_activity_email">Email</string>
+    <string name="et_hint_register_activity_password">Password</string>
+    <string name="et_hint_register_activity_password_repeat">Repeat the password</string>
+    <string name="btn_register_activity_submit">Sign Up</string>
+    <string name="tv_register_activity_have_account">Already have an account?</string>
+
+    <!-- Login Activity -->
+    <string name="et_hint_login_activity_email">Email</string>
+    <string name="et_hint_login_activity_password">Password</string>
+    <string name="btn_login_activity_submit">Sign In</string>
+    <string name="tv_login_activity_reset_password">Reset password</string>
+    <string name="tv_login_activity_not_have_account">Don\'t have an account?</string>
+
+    <!-- Main Activity -->
+    <string name="item_main_activity_bottom_navigation_articles">Articles</string>
+    <string name="item_main_activity_bottom_navigation_new_article">Add</string>
+    <string name="item_main_activity_bottom_navigation_profile">Profile</string>
+
+    <!-- Change Password Activity -->
+    <string name="toolbar_change_password_activity_title">Set a new password</string>
+    <string name="et_hint_change_password_activity_old_password">Repeat the old password</string>
+    <string name="et_hint_change_password_activity_new_password">Set a new password</string>
+    <string name="btn_change_password_activity_submit">Update</string>
+
+    <!-- Profile Fragment -->
+    <string name="tv_profile_fragment_change_password">Do you want to change your password?</string>
+    <string name="tv_profile_fragment_sign_out">Do you want to sign out?</string>
+
+    <!-- New Article Fragment -->
+    <string name="toolbar_new_article_fragment_title">Add a new article</string>
+    <string name="et_hint_new_article_fragment_title">Enter a title</string>
+    <string name="et_hint_new_article_fragment_content">Enter a content</string>
+    <string name="item_new_article_fragment_publish">Publish</string>
+
+    <!-- Articles Fragment -->
+    <string name="toolbar_articles_fragment_title">Recently added</string>
+
+</resources>
