@@ -5,7 +5,6 @@ _Here is it_
   <img src="screenshots/screen_1.png" width="350px" />
   <img src="screenshots/screen_2.png" width="350px" />
   <img src="screenshots/screen_3.png" width="350px" />
-  <img src="screenshots/screen_4.png" width="350px" />
 </div> <br />
 
 _100gram - an application where you can create a user account and publish articles for everyone._
