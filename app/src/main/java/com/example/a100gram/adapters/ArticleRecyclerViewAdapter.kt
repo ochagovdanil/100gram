@@ -13,7 +13,7 @@ class ArticleRecyclerViewAdapter :
 
     private lateinit var mOnArticleClickListener: OnArticleClickListener
 
-    private val mListOfArticles = ArrayList<Article>()
+    private val mListOfArticles = mutableListOf<Article>()
 
     override fun onBindViewHolder(holder: ArticleViewHolder, position: Int) {
         holder.bindViews(mListOfArticles[position])
