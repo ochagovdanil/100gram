@@ -1,6 +1,5 @@
 package com.example.a100gram.fragments
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.*
 import android.widget.Toast
@@ -10,7 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.a100gram.R
-import com.example.a100gram.activities.ViewArticleActivity
 import com.example.a100gram.adapters.ArticleRecyclerViewAdapter
 import com.example.a100gram.helpers.ProgressBarDialog
 import com.example.a100gram.models.Article
@@ -40,11 +38,10 @@ class ArticlesFragment : Fragment() {
     }
 
     private fun initApp() {
-        mAdapter = ArticleRecyclerViewAdapter()
+        mAdapter = ArticleRecyclerViewAdapter(context!!)
 
         initToolbar()
         initList()
-        openPost()
     }
 
     private fun initToolbar() {
@@ -93,22 +90,6 @@ class ArticlesFragment : Fragment() {
         recyclerView?.adapter = mAdapter
 
         ProgressBarDialog.hideDialog(activity as AppCompatActivity)
-    }
-
-    private fun openPost() {
-        mAdapter.setOnArticleClickListener(object : ArticleRecyclerViewAdapter.OnArticleClickListener {
-            override fun onClick(article: Article) {
-                // go to View Activity
-                val intent = Intent(context, ViewArticleActivity::class.java).apply {
-                    putExtra("title", article.title)
-                    putExtra("content", article.content)
-                    putExtra("email", article.email)
-                    putExtra("date", article.date)
-                }
-
-                startActivity(intent)
-            }
-        })
     }
 
     private fun showMessage(message: String) {
