@@ -4,10 +4,8 @@ import android.os.Bundle
 import android.view.*
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.a100gram.R
 import com.example.a100gram.adapters.ArticleRecyclerViewAdapter
 import com.example.a100gram.helpers.ProgressBarDialog
