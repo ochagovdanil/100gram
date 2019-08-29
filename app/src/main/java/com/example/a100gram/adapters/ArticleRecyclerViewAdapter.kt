@@ -1,19 +1,20 @@
 package com.example.a100gram.adapters
 
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.a100gram.R
+import com.example.a100gram.activities.ViewArticleActivity
 import com.example.a100gram.models.Article
 import kotlinx.android.synthetic.main.item_article.view.*
 
-class ArticleRecyclerViewAdapter :
+class ArticleRecyclerViewAdapter(private val context: Context) :
     RecyclerView.Adapter<ArticleRecyclerViewAdapter.ArticleViewHolder>() {
 
-    private lateinit var mOnArticleClickListener: OnArticleClickListener
-
-    private val mListOfArticles = ArrayList<Article>()
+    private val mListOfArticles = mutableListOf<Article>()
 
     override fun onBindViewHolder(holder: ArticleViewHolder, position: Int) {
         holder.bindViews(mListOfArticles[position])
@@ -24,10 +25,6 @@ class ArticleRecyclerViewAdapter :
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ArticleViewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.item_article, parent, false)
         return ArticleViewHolder(v)
-    }
-
-    fun setOnArticleClickListener(onArticleClickListener: OnArticleClickListener) {
-        mOnArticleClickListener = onArticleClickListener
     }
 
     fun addArticle(article: Article) = mListOfArticles.add(article)
@@ -47,14 +44,18 @@ class ArticleRecyclerViewAdapter :
 
             // open an article
             view.cv_item_article.setOnClickListener {
-                mOnArticleClickListener.onClick(article)
+                // go to View Activity
+                val intent = Intent(context, ViewArticleActivity::class.java).apply {
+                    putExtra("title", article.title)
+                    putExtra("content", article.content)
+                    putExtra("email", article.email)
+                    putExtra("date", article.date)
+                }
+
+                context.startActivity(intent)
             }
         }
 
-    }
-
-    interface OnArticleClickListener {
-        fun onClick(article: Article)
     }
 
 }

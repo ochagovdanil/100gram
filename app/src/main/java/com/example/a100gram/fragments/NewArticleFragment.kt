@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.*
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import com.example.a100gram.R
 import com.example.a100gram.helpers.ProgressBarDialog
