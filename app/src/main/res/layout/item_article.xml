@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/cv_item_article"
-    app:cardCornerRadius="10dp"
     android:layout_margin="6dp"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -11,7 +9,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tv_item_article_title"
             android:maxLines="2"
             android:ellipsize="end"
@@ -25,14 +23,14 @@
             android:background="@color/colorSilver"
             android:layout_width="match_parent"
             android:layout_height="1dp" />
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tv_item_article_content"
             android:maxLines="4"
             android:ellipsize="end"
             android:textSize="13sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tv_item_article_date"
             android:layout_gravity="end"
             android:textSize="13sp"
@@ -40,4 +38,4 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
-</androidx.cardview.widget.CardView>
+</com.google.android.material.card.MaterialCardView>

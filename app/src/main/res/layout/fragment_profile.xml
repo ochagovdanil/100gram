@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tv_profile_fragment_email"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
@@ -14,7 +14,7 @@
         android:textColor="@color/colorBlack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tv_profile_fragment_email_verified"
         android:layout_gravity="center_horizontal"
         android:textSize="14sp"
@@ -26,7 +26,7 @@
         android:background="@color/colorSilver"
         android:layout_width="match_parent"
         android:layout_height="1dp" />
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tv_profile_fragment_change_password"
         android:text="@string/tv_profile_fragment_change_password"
         android:layout_marginTop="20dp"
@@ -35,7 +35,7 @@
         android:layout_marginRight="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tv_profile_fragment_sign_out"
         android:text="@string/tv_profile_fragment_sign_out"
         android:layout_marginTop="20dp"

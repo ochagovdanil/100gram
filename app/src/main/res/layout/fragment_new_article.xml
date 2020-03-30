@@ -19,7 +19,7 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_new_article_fragment_title"
                     android:hint="@string/et_hint_new_article_fragment_title"
                     android:textSize="15sp"
@@ -30,7 +30,7 @@
                     android:inputType="textShortMessage"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
-                <EditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/et_new_article_fragment_content"
                     android:textSize="15sp"
                     android:hint="@string/et_hint_new_article_fragment_content"

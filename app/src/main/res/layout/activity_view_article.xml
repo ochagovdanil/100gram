@@ -7,21 +7,21 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tv_view_article_activity_title"
             android:textStyle="bold"
             android:textColor="@color/colorBlack"
             android:textSize="20sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tv_view_article_activity_content"
             android:textSize="14sp"
             android:textColor="@color/colorBlack"
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tv_view_article_activity_email"
             android:layout_gravity="end"
             android:textStyle="bold"
@@ -30,7 +30,7 @@
             android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/tv_view_article_activity_date"
             android:layout_gravity="end"
             android:textSize="13sp"

@@ -45,15 +45,16 @@
                     android:hint="@string/et_hint_register_activity_password_repeat"
                     style="@style/EditText" />
             </com.google.android.material.textfield.TextInputLayout>
-            <TextView
+            <Button
                 android:id="@+id/tv_register_activity_have_account"
                 android:text="@string/tv_register_activity_have_account"
                 android:layout_gravity="center_horizontal"
                 android:textColor="@color/colorPrimary"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <Button
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.Button.TextButton" />
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_register_activity_submit"
                 android:text="@string/btn_register_activity_submit"
                 style="@style/ButtonForm" />
