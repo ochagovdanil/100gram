@@ -11,7 +11,7 @@ _100gram - an application where you can create a user account and publish articl
 
  * Name - 100gram
  * Android 5.0(API 21) or higher
- * Apk size - 4.23 MB
+ * Apk size - 4.9 MB
  * Developer - Danil Ochagov [(ochagovdanil)](https://github.com/ochagovdanil)
 
 # Getting Started
