@@ -95,7 +95,7 @@ class ArticlesFragment : Fragment() {
             arguments = Bundle().apply {
                 putString("message", message)
             }
-        }.show(activity?.supportFragmentManager, "InformationDialogFragment")
+        }.show(activity?.supportFragmentManager!!, "InformationDialogFragment")
     }
 
 }

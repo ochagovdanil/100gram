@@ -37,11 +37,11 @@ class NewArticleFragment : Fragment() {
         initApp()
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?, inflater: MenuInflater?) {
-        inflater?.inflate(R.menu.new_article, menu)
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.new_article, menu)
     }
 
-    override fun onOptionsItemSelected(item: MenuItem?): Boolean = when (item?.itemId) {
+    override fun onOptionsItemSelected(item: MenuItem): Boolean = when (item.itemId) {
         R.id.item_new_article_fragment_publish -> {
             checkForm()
             true
@@ -135,7 +135,7 @@ class NewArticleFragment : Fragment() {
             arguments = Bundle().apply {
                 putString("message", message)
             }
-        }.show(activity?.supportFragmentManager, "InformationDialogFragment")
+        }.show(activity?.supportFragmentManager!!, "InformationDialogFragment")
     }
 
 }

@@ -66,7 +66,7 @@ class ProfileFragment : Fragment() {
                         startActivity(Intent(context, ChangePasswordActivity::class.java))
                     }
                 })
-            }.show(activity?.supportFragmentManager, "AskDialogFragment")
+            }.show(activity?.supportFragmentManager!!, "AskDialogFragment")
         }
     }
 
@@ -86,7 +86,7 @@ class ProfileFragment : Fragment() {
                         activity?.recreate()
                     }
                 })
-            }.show(activity?.supportFragmentManager, "AskDialogFragment")
+            }.show(activity?.supportFragmentManager!!, "AskDialogFragment")
         }
     }
 
