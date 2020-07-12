@@ -24,14 +24,14 @@ class ArticleRecyclerViewAdapter(private val context: Context) :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ArticleViewHolder {
         val v = LayoutInflater.from(parent.context).inflate(R.layout.item_article, parent, false)
-        return ArticleViewHolder(v)
+        return ArticleViewHolder(v, context)
     }
 
     fun addArticle(article: Article) = mListOfArticles.add(article)
 
     fun reverseList() = mListOfArticles.reverse()
 
-    inner class ArticleViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
+    class ArticleViewHolder(private val view: View, private val context: Context) : RecyclerView.ViewHolder(view) {
 
         fun bindViews(article: Article) {
             val title = view.tv_item_article_title
